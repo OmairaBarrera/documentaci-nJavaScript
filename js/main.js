@@ -1,14 +1,14 @@
-/*Metodo endsWith
-    Si finaliza con un caracter.
+/*Metodo replace
+    Busca coincidencia y reemplaza, pero solo la primera.
 */
 
-let cadena = "Cuando te permites lo que mereces, atraes lo que necesitas";
+let cadena = "No importa que tan lento vayas mientras no te detengas.";
 document.querySelector('.container').innerHTML = `
 
 <h1>Metodos String JavaScript</h1>
-<h2>Metodo EndsWith</h2>
+<h2>Metodo Replace</h2>
 ${cadena}<br>
-${cadena.endsWith('s')}
+${cadena.replace('lento','rapido')}
 
 ` 
-console.log(cadena.endsWith('s'));
+console.log(cadena.replace('lento','rapido'));
