@@ -1,14 +1,14 @@
-/*Metodo Includes
-    Si comienza, termina o contiene una subcadena especifica.
+/*Metodo startsWith
+    Si comienza con un caracter.
 */
 
-let cadena = "La conciencia de ser prudente, lleva a una vida de mejor coherencia";
+let cadena = "Cuando te permites lo que mereces, atraes lo que necesitas";
 document.querySelector('.container').innerHTML = `
 
 <h1>Metodos String JavaScript</h1>
-<h2>Metodo Includes</h2>
+<h2>Metodo StartsWith</h2>
 ${cadena}<br>
-${cadena.includes('c')}
+${cadena.startsWith('J')}
 
 ` 
-console.log(cadena.includes('c'));
+console.log(cadena.startsWith('J'));
