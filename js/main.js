@@ -1,16 +1,21 @@
-/*Metodo repeat
-    construye y devuelve copias de una cadena.
+/*Metodo split
+    porciona dependiendo de especificaciones.
 */
 
-let cadena = "Te mereces cosas increibles y punto";
-let cadena2 = "Lo unico imposible es lo que no intentas.";
+let cadena = "Dedica tu tiempo a disfrutar la vida porque es eso lo unico que te hara verdaderamente feliz.";
+let cadena2 = "La vida es como un libro.";
 document.querySelector('.container').innerHTML = `
 
 <h1>Metodos String JavaScript</h1>
-<h2>Metodo repeat</h2>
+<h2>Metodo split</h2>
 ${cadena}<br>
-${cadena.repeat(25)}<br>
-${cadena2.repeat(5)}
+${cadena.split(' ')}<br>
+${cadena.split(' ').length}<br>
+${cadena2}<br>
+${cadena2.split(' ')}<br>
+${cadena2.split(' ').length}
 ` 
-console.log(cadena.repeat(25));
-console.log(cadena2.repeat(5));
+console.log(cadena.split(' '));
+console.log(cadena.split(' ').length);
+console.log(cadena2.split(' '));
+console.log(cadena2.split(' ').length);
