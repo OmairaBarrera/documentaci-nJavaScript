@@ -1,16 +1,14 @@
-/*Metodo codePointAt
-    Devuelve el unicode de una posicion en especifico de la cadena
+/*Metodo fromCharCode
+    Creo cadena apartir del unicode
 */
 
-let cadena = "La adversidad y la perseverancia pueden diseñar tu vida";
 document.querySelector('.container').innerHTML = `
 
 <h1>Metodos String JavaScript</h1>
 <h2>Metodo CodePointAt</h2>
-${cadena}<br>
-${cadena.codePointAt(20)}<br>
-${cadena.codePointAt(30)}
+${String.fromCharCode(65,66,67)}<br>
+${String.fromCharCode(86,73,68,65)}
 
 ` 
-console.log(cadena.codePointAt(20));
-console.log(cadena.codePointAt(30));
+console.log(String.fromCharCode(65,66,67));
+console.log(String.fromCharCode(86,73,68,65));
