@@ -1,14 +1,14 @@
-/*Metodo Length
-    Indica el numero de unidades en la cadena
+/*Metodo Includes
+    Si comienza, termina o contiene una subcadena especifica.
 */
 
-let cadena = "Inicio de JavaScript con metodos de strings";
+let cadena = "La conciencia de ser prudente, lleva a una vida de mejor coherencia";
 document.querySelector('.container').innerHTML = `
 
 <h1>Metodos String JavaScript</h1>
-<h2>Metodo Length</h2>
+<h2>Metodo Includes</h2>
 ${cadena}<br>
-${cadena.length}
+${cadena.includes('c')}
 
 ` 
-console.log(cadena.length);
+console.log(cadena.includes('c'));
