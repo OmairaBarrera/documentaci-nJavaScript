@@ -1,16 +1,16 @@
-/*Metodo substring
-    extrae seccion de una cadena y devuelve una nueva cadena.
+/*Metodo repeat
+    construye y devuelve copias de una cadena.
 */
 
-let cadena = "No importa que tan lento vayas mientras no te detengas.";
+let cadena = "Te mereces cosas increibles y punto";
+let cadena2 = "Lo unico imposible es lo que no intentas.";
 document.querySelector('.container').innerHTML = `
 
 <h1>Metodos String JavaScript</h1>
-<h2>Metodo Substring</h2>
+<h2>Metodo repeat</h2>
 ${cadena}<br>
-${cadena.substring(25,45)}<br>
-${cadena.substring(-5,45)}
-
+${cadena.repeat(25)}<br>
+${cadena2.repeat(5)}
 ` 
-console.log(cadena.substring(25,45));
-console.log(cadena.substring(-5,45));
+console.log(cadena.repeat(25));
+console.log(cadena2.repeat(5));
