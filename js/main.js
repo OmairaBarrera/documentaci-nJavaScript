@@ -1,19 +1,17 @@
-/*Metodo concat
-    Une dos cadenas de texto
+/*Metodo indexOf
+    Indica el indice de un substring y desde una posicion indicada
 */
 
-let cadena = "Dedica tu tiempo a ";
-let cadena2 = "leer un libro.";
+let cadena = "Llena tu espiritu de triunfo";
 
 document.querySelector('.container').innerHTML = `
 
 <h1>Metodos String JavaScript</h1>
-<h2>Metodo concat</h2>
-
-${cadena.concat(' ', cadena2)}<br>
-${cadena2.concat(' ', cadena)}<br>
-${cadena.concat('disfrutar de la vida')}
+<h2>Metodo indexOf</h2>
+${cadena}<br>
+${cadena.indexOf('u')}<br>
+${cadena.indexOf('u', 14)}
 
 ` 
-console.log(cadena.concat(' ', cadena2));
-console.log(cadena2.concat(' ', cadena));
+console.log(cadena.indexOf('u'));
+console.log(cadena.indexOf('u', 14));
