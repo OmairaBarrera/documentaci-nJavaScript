@@ -1,16 +1,16 @@
-/*Metodo Search
-    Indica el indice de un substring
+/*Metodo toLowerCase
+    convierte una cadena de texto a minusculas
 */
 
-let cadena = "Llena tu espiritu de triunfo";
+let cadena = "LLENA TU ESPIRITU DE TRIUNFO";
 
 document.querySelector('.container').innerHTML = `
 
 <h1>Metodos String JavaScript</h1>
-<h2>Metodo search</h2>
+<h2>Metodo toLowerCase</h2>
 ${cadena}<br>
-${cadena.search('u')}
+${cadena.toLowerCase()}
 
 ` 
-console.log(cadena.search('u'));
+console.log(cadena.toLowerCase());
 
