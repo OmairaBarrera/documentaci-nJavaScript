@@ -1,14 +1,19 @@
-/*Metodo fromCharCode
+/*Metodo concat
     Creo cadena apartir del unicode
 */
+
+let cadena = "Dedica tu tiempo a ";
+let cadena2 = "leer un libro.";
 
 document.querySelector('.container').innerHTML = `
 
 <h1>Metodos String JavaScript</h1>
-<h2>Metodo fromChartCode</h2>
-${String.fromCharCode(65,66,67)}<br>
-${String.fromCharCode(86,73,68,65)}
+<h2>Metodo concat</h2>
+
+${cadena.concat(' ', cadena2)}<br>
+${cadena2.concat(' ', cadena)}<br>
+${cadena.concat('disfrutar de la vida')}
 
 ` 
-console.log(String.fromCharCode(65,66,67));
-console.log(String.fromCharCode(86,73,68,65));
+console.log(cadena.concat(' ', cadena2));
+console.log(cadena2.concat(' ', cadena));
