@@ -1,5 +1,5 @@
 /*Metodo concat
-    Creo cadena apartir del unicode
+    Une dos cadenas de texto
 */
 
 let cadena = "Dedica tu tiempo a ";
