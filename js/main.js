@@ -1,11 +1,16 @@
-/*Metodos Math.log
-    devuelve la base neutral de un número
+/*Metodos Math.max
+    retorna el mayor de cero o más números dados como parámetros de entrada
 */
 
-console.log("Calcular la base de numeros diferentes")
-console.log("log(-1) = ", Math.log(-1))
-console.log("log(10) = ", Math.log(10))
-console.log("log(25) = ", Math.log(25))
-console.log("log(5) = ", Math.log(5))
+console.log("Calcular el numero maximo de una serie de numeros")
+
+console.log("Numero mayor de: 1, 3, 2  =  ",Math.max(1, 3, 2));
+console.log("Numero mayor de: -1, -3, -2  =  ",Math.max(-1, -3, -2));
+
+const array1 = [1, 3, 2];
+console.log("Numero mayor de ",array1)
+console.log(Math.max(...array1));
+
+
   
 
