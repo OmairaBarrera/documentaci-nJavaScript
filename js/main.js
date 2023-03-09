@@ -1,15 +1,11 @@
-/*Metodos Math.abs
-    retorna el valor absoluto de un número
+/*Metodos Math.exp
+    retorna la exponenciacion de euler.
 */
 
-function calculaCircunferencia(radio) {
-    return 2 * Math.PI * radio;
-}
-
-console.log("Calcular el valor absoluto de un numero")
-console.log("Calcular el valor absoluto de: -15")
-console.log("Valor absoluto es: ",Math.abs(-15)); 
-console.log("Calcular el valor absoluto de: 4")
-console.log("Valor absoluto es: ",Math.abs(4)); 
+console.log("Calcular la exponenciacion de euler de numeros diferentes")
+console.log("e⁵ = ", Math.exp(5))
+console.log("e^-5 = ", Math.exp(-5))
+console.log("e¹⁰ = ", Math.exp(10))
+console.log("e⁹ = ", Math.exp(9))
   
 
