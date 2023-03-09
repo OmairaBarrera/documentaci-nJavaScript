@@ -1,49 +1,29 @@
-/* Operadores de Comparacion
+/* Operadores Logicos
     son aquellos que utilizamos en nuestro código para realizar comprobaciones.
-    1. Operador de igualdad
-    2. Operador de desigualdad
-    3. Operador mayor que
-    4. Operador mayor/igual que
-    5. Operador menor que
-    6. Operador menor/igual que
-    7. Operador de identidad 
-    8. Operador no idéntico
+    1. Operador AND
+    2. Operador OR
+    3. Operador NOT 
+    4. Operador XOR 
 */
 
 document.querySelector('.container').innerHTML = `
 
-<h1>Operadores de Comparacion JavaScript</h1>
-<h2>1. Operador de igualdad</h2>
-<p>Comprueba si el valor de a es igual al de b. No comprueba tipo de dato,<br> 
-    por ejemplo: <br> 4 == 5 = ${4 == 5} <br> 4 == 4 = ${4 == 4}
+<h1>Operadores Logicos JavaScript</h1>
+<h2>1. Operador AND</h2>
+<p>Devuelve 1 si ambos operandos son 1,<br> 
+    por ejemplo: <br> 1 & 1 = ${1 & 1} <br> 0 & 1 = ${0 & 1}
 </p>
-<h2>2. Operador de desigualdad</h2>
-<p>Comprueba si el valor de a no es igual al de b. No comprueba tipo de dato,<br> 
-    por ejemplo: <br> 4 != 5 = ${4 != 5} <br> 4 != 4 = ${4 != 4}
+<h2>2. Operador OR</h2>
+<p>Devuelve 1 si al menos un operando es 1,<br> 
+    por ejemplo: <br> 1 | 1 = ${1 | 1} <br> 1 | 0 = ${0 | 1}
 </p>
-<h2>3. Operador mayor que</h2>
-<p> Comprueba si el valor de a es mayor que el de b,<br> 
-    por ejemplo: <br> 4 > 5 = ${4 > 5} <br> 15 > 4 = ${15 > 4}
+<h2>3. Operador NOT </h2>
+<p>Invierte los bits del operando (por ejemplo, 000101 pasa a 111010). Trunca a 32 bits,<br> 
+    por ejemplo: <br> ~15 = ${~15} <br> ~0 = ${~0}
 </p>
-<h2>4. Operador mayor/igual que</h2>
-<p> Comprueba si el valor de a es mayor o igual que el de b,<br> 
-    por ejemplo: <br> 4 >= 5 = ${4 >= 5} <br> 15 >= 4 = ${15 >= 4} <br> 6 >= 6 = ${6 >= 6}
-</p>
-<h2>5. Operador menor que</h2>
-<p>  	Comprueba si el valor de a es menor que el de b.,<br> 
-    por ejemplo: <br> 4 < 5 = ${4 < 5} <br> 15 < 4 = ${15 < 4}
-</p>
-<h2>6. Operador menor/igual que</h2>
-<p> Comprueba si el valor de a es menor o igual que el de b,<br> 
-    por ejemplo: <br> 4 <= 5 = ${4 <= 5} <br> 15 <= 4 = ${15 <= 4} <br> 6 <= 6 = ${6 <= 6}
-</p>
-<h2>7. Operador de identidad </h2>
-<p> Comprueba si el valor y el tipo de dato de a es igual al de b,<br> 
-    por ejemplo: <br> 4 === 5 = ${4 === 5} <br> 15 === 15 = ${15 === 15} <br> 6 === '6' = ${6 === '6'}
-</p>
-<h2>8. Operador no idéntico</h2>
-<p> Comprueba si el valor y el tipo de dato de a no es igual al de b,<br> 
-    por ejemplo: <br> 4 !== 5 = ${4 !== 5} <br> 15 !== '4' = ${15 !== '4'} <br> 6 !== 6 = ${6 !== 6}
+<h2>4. Operador XOR</h2>
+<p>Devuelve 1 si ambos operandos son diferentes,<br> 
+    por ejemplo: <br> 1 ^ 0  = ${1^0} <br> 1 ^ 1  = ${1^1}
 </p>
 
 ` 
