@@ -1,11 +1,11 @@
-/*Metodos Math.exp
-    retorna la exponenciacion de euler.
+/*Metodos Math.log
+    devuelve la base neutral de un número
 */
 
-console.log("Calcular la exponenciacion de euler de numeros diferentes")
-console.log("e⁵ = ", Math.exp(5))
-console.log("e^-5 = ", Math.exp(-5))
-console.log("e¹⁰ = ", Math.exp(10))
-console.log("e⁹ = ", Math.exp(9))
+console.log("Calcular la base de numeros diferentes")
+console.log("log(-1) = ", Math.log(-1))
+console.log("log(10) = ", Math.log(10))
+console.log("log(25) = ", Math.log(25))
+console.log("log(5) = ", Math.log(5))
   
 
