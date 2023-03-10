@@ -1,11 +1,11 @@
-/*Metodos Math.floor
-    Devuelve el máximo entero menor o igual a un número.
+/*Metodos Math.round
+    retorna el valor de un número redondeado al entero más cercano
 */
-console.log("Valor mas proximo de varios numeros");
-console.log("Numero mas cercano a .95 = ", Math.floor(.95));
-console.log("Numero mas cercano a 4 = ", Math.floor(4)); 
-console.log("Numero mas cercano a 7.004 = ", Math.floor(7.004));
-console.log("Numero mas cercano a -7.004 = ", Math.floor(-7.004));
+console.log("Valor redondeado de varios numeros");
+console.log("Numero mas cercano a .95 = ", Math.round(.95));
+console.log("Numero mas cercano a 4.5 = ", Math.round(4.5)); 
+console.log("Numero mas cercano a 7.004 = ", Math.round(7.004));
+console.log("Numero mas cercano a -7.004 = ", Math.round(-7.004));
 
 
 
