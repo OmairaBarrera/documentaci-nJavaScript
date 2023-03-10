@@ -1,11 +1,11 @@
-/*Metodos Math.sqrt
-    retorna la raíz cuadrada de un número
+/*Metodos Math.ceil
+    devuelve el entero mayor o igual más próximo a un número dado
 */
-console.log("La raiz cuadrada de varios numeros");
-console.log("La raiz cuadrada de 9 = ", Math.sqrt(9));
-console.log("La raiz cuadrada de 2 = ", Math.sqrt(2)); 
-console.log("La raiz cuadrada de numeros negativos");
-console.log("La raiz cuadrada de -1 = ", Math.sqrt(-1));
+console.log("Valor mas proximo de varios numeros");
+console.log("Numero mas cercano a .95 = ", Math.ceil(.95));
+console.log("Numero mas cercano a 4 = ", Math.ceil(4)); 
+console.log("Numero mas cercano a 7.004 = ", Math.ceil(7.004));
+console.log("Numero mas cercano a -7.004 = ", Math.ceil(-7.004));
 
 
 
