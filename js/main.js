@@ -1,24 +1,20 @@
-/* Funciones Autoejecutables
-crear una funcion y ejecutarla sobre la marcha
+/* Funciones Callbacks
+es pasar una función B por parámetro a una función A, de modo 
+que la función A puede ejecutar esa función B de forma genérica 
+desde su código
 */
 
-// Función autoejecutable
-(function () {
-    console.log("Hola!!");
-})();
+// fB = Función B
+const fB = function () {
+    console.log("Función B ejecutada.");
+};
 
-// Función autoejecutable con parámetros
-(function (name) {
-    console.log(`¡Hola, ${name}!`);
-})("Manz");
+// fA = Función A
+const fA = function (callback) {
+    callback();
+};
 
-// Funcion autoejecutable con return
-const f = (function (name) {
-    return `¡Hola, ${name}!`;
-})("Manz");
-
-console.log(f); // '¡Hola, Manz!`
-console.log(typeof f); // 'string'
+fA(fB);
 
 
 
