@@ -1,20 +1,15 @@
-/* Funciones Callbacks
-es pasar una función B por parámetro a una función A, de modo 
-que la función A puede ejecutar esa función B de forma genérica 
-desde su código
+/* Funciones Flecha
+son una forma corta de escribir funciones que aparece 
+en Javascript a partir de ECMAScript 6
 */
 
-// fB = Función B
-const fB = function () {
-    console.log("Función B ejecutada.");
+const funcNormal = function () {
+    return "Función tradicional.";
 };
 
-// fA = Función A
-const fA = function (callback) {
-    callback();
+const funcFlecha = () => {
+    return "Función flecha.";
 };
-
-fA(fB);
 
 
 
