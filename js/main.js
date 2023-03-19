@@ -1,14 +1,24 @@
-/* Funciones Anonimas o Lambda
-Se declaran sin nombre de funcion y se alojan en el 
-interior de una variables
+/* Funciones Autoejecutables
+crear una funcion y ejecutarla sobre la marcha
 */
 
-const saludo = function(){
-    return "Hola";
-}
+// Función autoejecutable
+(function () {
+    console.log("Hola!!");
+})();
 
-console.log(saludo);
-console.log(saludo());
+// Función autoejecutable con parámetros
+(function (name) {
+    console.log(`¡Hola, ${name}!`);
+})("Manz");
+
+// Funcion autoejecutable con return
+const f = (function (name) {
+    return `¡Hola, ${name}!`;
+})("Manz");
+
+console.log(f); // '¡Hola, Manz!`
+console.log(typeof f); // 'string'
 
 
 
