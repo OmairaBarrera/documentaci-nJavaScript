@@ -1,15 +1,23 @@
-/* Funciones Flecha
-son una forma corta de escribir funciones que aparece 
-en Javascript a partir de ECMAScript 6
+/* Clausuras
+una clausura o cierre se define como una función que «encierra» 
+variables en su propio ámbito (y que continúan existiendo aún 
+    habiendo terminado la función)
 */
 
-const funcNormal = function () {
-    return "Función tradicional.";
-};
+// Clausura: Función incr()
+const incr = (function () {
+    let num = 0;
+    return function () {
+      num++;
+      return num;
+    };
+  })();
+  
+  typeof incr; // 'function'
+  incr(); // 1
+  incr(); // 2
+  incr(); // 3
 
-const funcFlecha = () => {
-    return "Función flecha.";
-};
 
 
 
