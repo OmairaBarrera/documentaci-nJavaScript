@@ -1,9 +1,14 @@
-/* Funciones como objetos
-Declarar una funcion como si fueran objetos
+/* Funciones Anonimas o Lambda
+Se declaran sin nombre de funcion y se alojan en el 
+interior de una variables
 */
 
-const greetings = new Function("return 'Hola';");
-greetings ();
+const saludo = function(){
+    return "Hola";
+}
+
+console.log(saludo);
+console.log(saludo());
 
 
 
