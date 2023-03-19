@@ -1,19 +1,18 @@
-/* Funciones por declaración
-permite declarar una función que existirá a lo largo de todo el código
-Incluso antes de haberla creado y funcionaría correctamente
+/* Funciones por Expresion
+Declaracion de una variable que se le asignara una funcion
+Antes de haberla creado y no funcionaría correctamente
 */
 
-console.log(calcular(5, 8));
+//console.log(calcular(5, 8));
 
-function saludar() {
+const saludo = function saludar() {
     return "Hola";
-}
-function calcular(n1 , n2) {
+};
+const calculo = function calcular(n1 , n2) {
     return n1*n2;
 }
 
-console.log(saludar());
-typeof saludar;
+console.log(saludo());
 
 
 
